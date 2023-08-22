@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/password.png" type="image/x-icon">
+</head>
+<body class="bg-blue-200">
+    
+<div class="flex justify-center items-center min-h-screen">
+    <form id="loginForm" class="flex justify-center items-center bg-gray-200 w-72 h-72 rounded-md shadow-lg">
+        <div class="flex-col justify-center items-center">
+            <img src="./img/password.png" alt="logo" class="h-16 flex mx-auto animate-pulse">
+            <div class="m-3">
+                <input type="text" id="username" class="outline-none h-8 rounded-md pl-2 shadow-md border focus:border-blue-300 boder-2" placeholder="Digite seu nome "required>
+            </div>
+            <div class="m-3">
+                <input type="email" id="email" class="outline-none h-8 rounded-md pl-2 shadow-md border focus:border-blue-300 boder-2" placeholder="Ddigite seu email "required>
+            </div>
+            <div class="m-5">
+                <input type="submit" id="login-btn" value="Logar" class="bg-green-300 hover:bg-green-200 duration-700 w-40 h-8 rounded-md flex mx-auto justify-center items-center font-semibold text-white shadow-lg cursor-pointer">
+            </div>
+            <a href="conta.html" class="text-blue-400 text-center mt-2">Criar conta</a>
+        </div>
+    </form>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
