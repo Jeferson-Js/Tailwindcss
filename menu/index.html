@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="bg-teal-400">
+    <header class="flex">
+        <nav class="flex justify-between items-center w-full h-16 p-3 bg-white">
+            <span class="flex items-center gap-2">
+                <img src="./img/logo.png" alt="logo" class="w-12 h-12">
+                <h2 class="lg:text-lg md:text-base sm:text-sm font-semibold text-teal-400">Oliveira.js</h2>
+            </span>
+            <span class="lg:hidden md:hidden text-3xl cursor-pointer flex ml-auto items-center">
+                <ion-icon name="menu" onclick="btnMobile(this)"></ion-icon>
+            </span>
+            <ul class="hidden lg:flex lg:items-center gap-4">
+                <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500 "><a href="#">home</a></li>
+                <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500"><a href="#">about</a></li>
+                <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500"><a href="#">contact</a></li>
+            </ul>
+            <div class="lg:hidden md:hidden">
+                <ul class="hidden flex-col absolute top-16 left-0 bg-white w-full h-40 shadow-lg" id="list-mobile">
+                    <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500 px-1 m-3 w-60 hover:bg-teal-300 py-2 rounded-r-full hover:text-white hover:shadow-lg"><a href="#">home</a></li>
+                    <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500 px-1 m-3 w-60 hover:bg-teal-300 py-2 rounded-r-full hover:text-white hover:shadow-lg"><a href="#">about</a></li>
+                    <li class="lg:text-lg md:text-base text-sm capitalize text-teal-500 hover:text-teal-300 duration-500 px-1 m-3 w-60 hover:bg-teal-300 py-2 rounded-r-full hover:text-white hover:shadow-lg"><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+</html>
