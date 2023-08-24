@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="shortcut icon" href="./img/js.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <button id="button_open" class="py-1 px-5 text-white bg-green-300 hover:bg-green-400 font-semibold capitalize rounded shadow-lg duration-500 outline-none m-2">open modal</button>
+
+    <dialog class=" w-[80%] h-44 rounded-md shadow-sm shadow-cyan-200 px-5 outline-none backdrop-blur-sm">
+      <h1 class="font-semibold text-3xl text-center m-2">Modal</h1>
+      <div>
+          <p class="text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam omnis in
+            consectetur minima amet illum blanditiis obcaecati, ipsum delectus
+            exercitationem deserunt minus mollitia, nihil voluptatem voluptateLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam omnis in
+            consectetur minima amet illum blanditiis obcaecati, ipsum delectus
+            exercitationem deserunt minus mollitia, nihil voluptatem voluptate.
+            </p>
+        </div>
+        <div>
+            <button id="button_close" class="py-1 px-5 text-white bg-red-300 hover:bg-red-400 font-semibold capitalize rounded shadow-lg duration-500 outline-none animate-pulse mt-2">close</button>
+        </div>
+    </dialog>
+  </body>
+</html>
